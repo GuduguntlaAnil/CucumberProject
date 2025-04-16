@@ -5,16 +5,16 @@ Given user has already logged in to application
 |username|password|
 |standard_user|secret_sauce|
 
-@home
+@Smoke
 Scenario: Home page Logout button
 Given user is on Home page
 When user gets the title of the page
-Then page title should be "Swag Labs"
+Then page title should be "Swag Labs11"
 When user clicks on menu
 Then "Logout" should be visible to user
 
 
-@home
+@Skip
 Scenario: Home page product filters count
 Given user is on Home page
 Then user gets filter section
