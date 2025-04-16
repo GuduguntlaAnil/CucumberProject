@@ -1,11 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-14T09:02:44 IST" name="Surefire suite" finished-at="2025-04-14T09:02:44 IST" duration-ms="9">
+  <suite started-at="2025-04-15T18:56:35 IST" name="Surefire suite" finished-at="2025-04-15T18:56:49 IST" duration-ms="13768">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:MyTestRunners.TestRunner@294425a7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-04-14T09:02:44 IST" name="Surefire test" finished-at="2025-04-14T09:02:44 IST" duration-ms="9">
+    <test started-at="2025-04-15T18:56:35 IST" name="Surefire test" finished-at="2025-04-15T18:56:49 IST" duration-ms="13768">
+      <class name="MyTestRunners.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:MyTestRunners.TestRunner@294425a7]" started-at="2025-04-15T18:56:35 IST" name="setUpClass" finished-at="2025-04-15T18:56:36 IST" duration-ms="703" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@65d09a04]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:MyTestRunners.TestRunner@294425a7]" started-at="2025-04-15T18:56:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-15T18:56:41 IST" duration-ms="5065" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login page title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login page feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:MyTestRunners.TestRunner@294425a7]" started-at="2025-04-15T18:56:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-15T18:56:44 IST" duration-ms="7888" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Home page Logout button"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Home Page Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:MyTestRunners.TestRunner@294425a7]" started-at="2025-04-15T18:56:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-15T18:56:44 IST" duration-ms="8071" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Home page product filters count"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Home Page Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:MyTestRunners.TestRunner@294425a7]" started-at="2025-04-15T18:56:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-15T18:56:44 IST" duration-ms="7918" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with correct credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login page feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:MyTestRunners.TestRunner@294425a7]" started-at="2025-04-15T18:56:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-15T18:56:41 IST" duration-ms="5114" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Accepted username text"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login page feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:MyTestRunners.TestRunner@294425a7]" started-at="2025-04-15T18:56:44 IST" name="tearDownClass" finished-at="2025-04-15T18:56:49 IST" duration-ms="4954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- MyTestRunners.TestRunner -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

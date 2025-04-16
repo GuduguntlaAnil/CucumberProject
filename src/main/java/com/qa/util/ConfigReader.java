@@ -12,7 +12,7 @@ public class ConfigReader {
 	public Properties init_prop()  {
 		prop=new Properties();
 		try {
-			FileInputStream ip=new FileInputStream("C:/Users/guduguntla anil/eclipse-workspace/CucumberProject/src/test/resources/config/config.properties");
+			FileInputStream ip=new FileInputStream("C:/Users/guduguntla anil/eclipse-workspace/CucumberProjectParallel/src/test/resources/config/config.properties");
 			try {
 				prop.load(ip);
 			} catch (IOException e) {
