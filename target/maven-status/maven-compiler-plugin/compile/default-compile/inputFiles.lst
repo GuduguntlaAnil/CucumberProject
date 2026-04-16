@@ -1,6 +1,7 @@
-C:\Users\guduguntla anil\eclipse-workspace\CucumberProjectParallel\src\main\java\com\pages\HomePage.java
-C:\Users\guduguntla anil\eclipse-workspace\CucumberProjectParallel\src\main\java\com\qa\Factory\DriverFactory.java
-C:\Users\guduguntla anil\eclipse-workspace\CucumberProjectParallel\src\main\java\com\qa\util\ElementUtil.java
-C:\Users\guduguntla anil\eclipse-workspace\CucumberProjectParallel\src\main\java\com\qa\util\Constants.java
-C:\Users\guduguntla anil\eclipse-workspace\CucumberProjectParallel\src\main\java\com\pages\LoginPage.java
-C:\Users\guduguntla anil\eclipse-workspace\CucumberProjectParallel\src\main\java\com\qa\util\ConfigReader.java
+C:\Users\guduguntla anil\eclipse-workspace\CucumberProjectParallel\src\main\java\com\automation\workware\pages\LoginPage.java
+C:\Users\guduguntla anil\eclipse-workspace\CucumberProjectParallel\src\main\java\com\automation\workware\utils\ExcelReader.java
+C:\Users\guduguntla anil\eclipse-workspace\CucumberProjectParallel\src\main\java\com\automation\workware\pages\HomePage.java
+C:\Users\guduguntla anil\eclipse-workspace\CucumberProjectParallel\src\main\java\com\automation\workware\utils\ConfigReader.java
+C:\Users\guduguntla anil\eclipse-workspace\CucumberProjectParallel\src\main\java\com\automation\workware\pages\BasePage.java
+C:\Users\guduguntla anil\eclipse-workspace\CucumberProjectParallel\src\main\java\com\automation\workware\utils\WaitUtils.java
+C:\Users\guduguntla anil\eclipse-workspace\CucumberProjectParallel\src\main\java\com\automation\workware\factory\DriverFactory.java

@@ -1,4 +1,5 @@
-C:\Users\guduguntla anil\eclipse-workspace\CucumberProjectParallel\src\test\java\MyTestRunners\TestRunner.java
-C:\Users\guduguntla anil\eclipse-workspace\CucumberProjectParallel\src\test\java\stepDefination\HomePageSteps.java
-C:\Users\guduguntla anil\eclipse-workspace\CucumberProjectParallel\src\test\java\Hooks\MyHooks.java
-C:\Users\guduguntla anil\eclipse-workspace\CucumberProjectParallel\src\test\java\stepDefination\LoginSteps.java
+C:\Users\guduguntla anil\eclipse-workspace\CucumberProjectParallel\src\test\java\com\automation\workware\runners\TestRunner.java
+C:\Users\guduguntla anil\eclipse-workspace\CucumberProjectParallel\src\test\java\com\automation\workware\stepdefinations\HomePageSteps.java
+C:\Users\guduguntla anil\eclipse-workspace\CucumberProjectParallel\src\test\java\com\automation\workware\runners\FailedTestRunner.java
+C:\Users\guduguntla anil\eclipse-workspace\CucumberProjectParallel\src\test\java\com\automation\workware\hooks\ApplicationHooks.java
+C:\Users\guduguntla anil\eclipse-workspace\CucumberProjectParallel\src\test\java\com\automation\workware\stepdefinations\LoginPageSteps.java
