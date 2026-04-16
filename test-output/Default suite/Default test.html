@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/3</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/6/2</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Apr 15 22:30:55 IST 2025</td>
+<td>Started on:</td><td>Fri Feb 06 15:33:56 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>8 seconds (8876 ms)</td>
+<tr><td>Total time:</td><td>31 seconds (31964 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,23 +76,147 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='MyTestRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: MyTestRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Home page Logout button", "Home Page Feature"</td>
+<td title='com.automation.workware.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.workware.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login using a specific row from Excel", "Excel driven login"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.ss.usermodel.Workbook.getSheet(String)&quot; because &quot;this.workbook&quot; is null
+	at com.automation.workware.utils.ExcelReader.getRowDataAsMap(ExcelReader.java:65)
+	at com.automation.workware.stepdefinations.LoginPageSteps.user_logs_in_using_excel_sheet_row(LoginPageSteps.java:124)
+	at ✽.user logs in using excel sheet &quot;Sheet1&quot; row 2(file:///C:/Users/guduguntla%20anil/eclipse-workspace/CucumberProjectParallel/src/test/resources/features/excel_login.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1543089113", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1543089113'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.ss.usermodel.Workbook.getSheet(String)&quot; because &quot;this.workbook&quot; is null
+	at com.automation.workware.utils.ExcelReader.getRowDataAsMap(ExcelReader.java:65)
+	at com.automation.workware.stepdefinations.LoginPageSteps.user_logs_in_using_excel_sheet_row(LoginPageSteps.java:124)
+	at ✽.user logs in using excel sheet &quot;Sheet1&quot; row 2(file:///C:/Users/guduguntla%20anil/eclipse-workspace/CucumberProjectParallel/src/test/resources/features/excel_login.feature:5)
+</pre></div></td>
+<td>17</td>
+<td>com.automation.workware.runners.TestRunner@305b7c14</td></tr>
+<tr>
+<td title='com.automation.workware.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.workware.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Home page Logout button", "Home Page Feature"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[text()=&apos;Products&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\GUDUGU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57530}, goog:processID: 1372, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57530/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a5ef9fc4eba3af064423ed4233120cc3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.automation.workware.utils.WaitUtils.waitForElementVisible(WaitUtils.java:34)
+	at com.automation.workware.utils.WaitUtils.waitForElementVisible(WaitUtils.java:39)
+	at com.automation.workware.pages.HomePage.getProductText(HomePage.java:38)
+	at com.automation.workware.stepdefinations.HomePageSteps.user_is_on_home_page(HomePageSteps.java:43)
+	at ✽.user is on Home page(file:///C:/Users/guduguntla%20anil/eclipse-workspace/CucumberProjectParallel/src/test/resources/features/home.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1366550755", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1366550755'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[text()=&apos;Products&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\GUDUGU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57530}, goog:processID: 1372, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57530/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a5ef9fc4eba3af064423ed4233120cc3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.automation.workware.utils.WaitUtils.waitForElementVisible(WaitUtils.java:34)
+	at com.automation.workware.utils.WaitUtils.waitForElementVisible(WaitUtils.java:39)
+	at com.automation.workware.pages.HomePage.getProductText(HomePage.java:38)
+	at com.automation.workware.stepdefinations.HomePageSteps.user_is_on_home_page(HomePageSteps.java:43)
+	at ✽.user is on Home page(file:///C:/Users/guduguntla%20anil/eclipse-workspace/CucumberProjectParallel/src/test/resources/features/home.feature:10)
+</pre></div></td>
+<td>26</td>
+<td>com.automation.workware.runners.TestRunner@305b7c14</td></tr>
+<tr>
+<td title='com.automation.workware.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.workware.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login using all rows from Excel", "Excel driven login"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.ss.usermodel.Workbook.getSheet(String)&quot; because &quot;this.workbook&quot; is null
+	at com.automation.workware.utils.ExcelReader.getAllData(ExcelReader.java:114)
+	at com.automation.workware.stepdefinations.LoginPageSteps.user_performs_login_for_all_rows_in_sheet(LoginPageSteps.java:140)
+	at ✽.user performs login for all rows in sheet &quot;Sheet1&quot;(file:///C:/Users/guduguntla%20anil/eclipse-workspace/CucumberProjectParallel/src/test/resources/features/excel_login.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1378376329", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1378376329'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.ss.usermodel.Workbook.getSheet(String)&quot; because &quot;this.workbook&quot; is null
+	at com.automation.workware.utils.ExcelReader.getAllData(ExcelReader.java:114)
+	at com.automation.workware.stepdefinations.LoginPageSteps.user_performs_login_for_all_rows_in_sheet(LoginPageSteps.java:140)
+	at ✽.user performs login for all rows in sheet &quot;Sheet1&quot;(file:///C:/Users/guduguntla%20anil/eclipse-workspace/CucumberProjectParallel/src/test/resources/features/excel_login.feature:10)
+</pre></div></td>
+<td>17</td>
+<td>com.automation.workware.runners.TestRunner@305b7c14</td></tr>
+<tr>
+<td title='com.automation.workware.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.workware.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login using Examples table", "Excel driven login"</td>
 <td><div><pre>junit.framework.AssertionFailedError
 	at junit.framework.Assert.fail(Assert.java:55)
 	at junit.framework.Assert.assertTrue(Assert.java:22)
 	at junit.framework.Assert.assertTrue(Assert.java:31)
-	at stepDefination.LoginSteps.page_title_should_be(LoginSteps.java:29)
-	at ✽.page title should be &quot;Swag Labs11&quot;(file:///C:/Users/guduguntla%20anil/eclipse-workspace/CucumberProjectParallel/src/test/resources/Features/Home.feature:12)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1309559807", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1309559807'><pre>junit.framework.AssertionFailedError
+	at com.automation.workware.stepdefinations.LoginPageSteps.page_url_contains(LoginPageSteps.java:104)
+	at ✽.page url contains &quot;inventory&quot;(file:///C:/Users/guduguntla%20anil/eclipse-workspace/CucumberProjectParallel/src/test/resources/features/excel_login.feature:18)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2119221269", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2119221269'><pre>junit.framework.AssertionFailedError
 	at junit.framework.Assert.fail(Assert.java:55)
 	at junit.framework.Assert.assertTrue(Assert.java:22)
 	at junit.framework.Assert.assertTrue(Assert.java:31)
-	at stepDefination.LoginSteps.page_title_should_be(LoginSteps.java:29)
-	at ✽.page title should be &quot;Swag Labs11&quot;(file:///C:/Users/guduguntla%20anil/eclipse-workspace/CucumberProjectParallel/src/test/resources/Features/Home.feature:12)
+	at com.automation.workware.stepdefinations.LoginPageSteps.page_url_contains(LoginPageSteps.java:104)
+	at ✽.page url contains &quot;inventory&quot;(file:///C:/Users/guduguntla%20anil/eclipse-workspace/CucumberProjectParallel/src/test/resources/features/excel_login.feature:18)
 </pre></div></td>
-<td>4</td>
-<td>MyTestRunners.TestRunner@6aaceffd</td></tr>
+<td>17</td>
+<td>com.automation.workware.runners.TestRunner@305b7c14</td></tr>
+<tr>
+<td title='com.automation.workware.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.workware.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add multiple products to cart and verify", "Add to Cart"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[text()=&apos;Products&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\GUDUGU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64871}, goog:processID: 8884, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64871/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d51da8d09de69247370e2d7e445c5f0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.automation.workware.utils.WaitUtils.waitForElementVisible(WaitUtils.java:34)
+	at com.automation.workware.utils.WaitUtils.waitForElementVisible(WaitUtils.java:39)
+	at com.automation.workware.pages.HomePage.getProductText(HomePage.java:38)
+	at com.automation.workware.stepdefinations.HomePageSteps.user_is_on_home_page(HomePageSteps.java:43)
+	at ✽.user is on Home page(file:///C:/Users/guduguntla%20anil/eclipse-workspace/CucumberProjectParallel/src/test/resources/features/add_to_cart.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2121034089", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2121034089'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[text()=&apos;Products&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\GUDUGU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64871}, goog:processID: 8884, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64871/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d51da8d09de69247370e2d7e445c5f0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.automation.workware.utils.WaitUtils.waitForElementVisible(WaitUtils.java:34)
+	at com.automation.workware.utils.WaitUtils.waitForElementVisible(WaitUtils.java:39)
+	at com.automation.workware.pages.HomePage.getProductText(HomePage.java:38)
+	at com.automation.workware.stepdefinations.HomePageSteps.user_is_on_home_page(HomePageSteps.java:43)
+	at ✽.user is on Home page(file:///C:/Users/guduguntla%20anil/eclipse-workspace/CucumberProjectParallel/src/test/resources/features/add_to_cart.feature:7)
+</pre></div></td>
+<td>26</td>
+<td>com.automation.workware.runners.TestRunner@305b7c14</td></tr>
+<tr>
+<td title='com.automation.workware.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.workware.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify single product already in cart", "Add to Cart"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[text()=&apos;Products&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\GUDUGU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59720}, goog:processID: 17420, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59720/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e3d4f92610f00410890fa89024ef7754
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.automation.workware.utils.WaitUtils.waitForElementVisible(WaitUtils.java:34)
+	at com.automation.workware.utils.WaitUtils.waitForElementVisible(WaitUtils.java:39)
+	at com.automation.workware.pages.HomePage.getProductText(HomePage.java:38)
+	at com.automation.workware.stepdefinations.HomePageSteps.user_is_on_home_page(HomePageSteps.java:43)
+	at ✽.user is on Home page(file:///C:/Users/guduguntla%20anil/eclipse-workspace/CucumberProjectParallel/src/test/resources/features/add_to_cart.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace386385308", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace386385308'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[text()=&apos;Products&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\GUDUGU~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59720}, goog:processID: 17420, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59720/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e3d4f92610f00410890fa89024ef7754
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.automation.workware.utils.WaitUtils.waitForElementVisible(WaitUtils.java:34)
+	at com.automation.workware.utils.WaitUtils.waitForElementVisible(WaitUtils.java:39)
+	at com.automation.workware.pages.HomePage.getProductText(HomePage.java:38)
+	at com.automation.workware.stepdefinations.HomePageSteps.user_is_on_home_page(HomePageSteps.java:43)
+	at ✽.user is on Home page(file:///C:/Users/guduguntla%20anil/eclipse-workspace/CucumberProjectParallel/src/test/resources/features/add_to_cart.feature:7)
+</pre></div></td>
+<td>26</td>
+<td>com.automation.workware.runners.TestRunner@305b7c14</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -103,10 +227,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='MyTestRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: MyTestRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login page title", "Login page feature"</td>
+<td title='com.automation.workware.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.workware.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login using Examples table", "Excel driven login"</td>
 <td></td>
-<td>3</td>
-<td>MyTestRunners.TestRunner@6aaceffd</td></tr>
+<td>17</td>
+<td>com.automation.workware.runners.TestRunner@305b7c14</td></tr>
+<tr>
+<td title='com.automation.workware.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.workware.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Accepted username text", "Login page feature"</td>
+<td></td>
+<td>5</td>
+<td>com.automation.workware.runners.TestRunner@305b7c14</td></tr>
+<tr>
+<td title='com.automation.workware.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.workware.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login page title", "Login page feature"</td>
+<td></td>
+<td>17</td>
+<td>com.automation.workware.runners.TestRunner@305b7c14</td></tr>
+<tr>
+<td title='com.automation.workware.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.workware.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login using Examples table", "Excel driven login"</td>
+<td></td>
+<td>17</td>
+<td>com.automation.workware.runners.TestRunner@305b7c14</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -117,7 +256,7 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='MyTestRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: MyTestRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Home page product filters count", "Home Page Feature"</td>
+<td title='com.automation.workware.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.workware.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Home page product filters count", "Home Page Feature"</td>
 <td><div><pre>org.testng.SkipException: got: &lt;false&gt;, expected: is &lt;true&gt;
 	at io.cucumber.testng.TestCaseResultObserver.lambda$assertTestCasePassed$1(TestCaseResultObserver.java:27)
 	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:66)
@@ -130,20 +269,23 @@ function toggleAllBoxes() {
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
-	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 Caused by: org.junit.AssumptionViolatedException: got: &lt;false&gt;, expected: is &lt;true&gt;
 	at org.junit.Assume.assumeThat(Assume.java:106)
 	at org.junit.Assume.assumeTrue(Assume.java:50)
-	at Hooks.MyHooks.skip_scenario(MyHooks.java:27)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1498169801", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1498169801'><pre>org.testng.SkipException: got: &lt;false&gt;, expected: is &lt;true&gt;
+	at com.automation.workware.hooks.ApplicationHooks.skip_scenario(ApplicationHooks.java:46)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1727405806", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1727405806'><pre>org.testng.SkipException: got: &lt;false&gt;, expected: is &lt;true&gt;
 	at io.cucumber.testng.TestCaseResultObserver.lambda$assertTestCasePassed$1(TestCaseResultObserver.java:27)
 	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:66)
 	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
@@ -155,23 +297,26 @@ Caused by: org.junit.AssumptionViolatedException: got: &lt;false&gt;, expected: 
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
-	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 Caused by: org.junit.AssumptionViolatedException: got: &lt;false&gt;, expected: is &lt;true&gt;
 	at org.junit.Assume.assumeThat(Assume.java:106)
 	at org.junit.Assume.assumeTrue(Assume.java:50)
-	at Hooks.MyHooks.skip_scenario(MyHooks.java:27)
+	at com.automation.workware.hooks.ApplicationHooks.skip_scenario(ApplicationHooks.java:46)
 </pre></div></td>
-<td>3</td>
-<td>MyTestRunners.TestRunner@6aaceffd</td></tr>
+<td>11</td>
+<td>com.automation.workware.runners.TestRunner@305b7c14</td></tr>
 <tr>
-<td title='MyTestRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: MyTestRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with correct credentials", "Login page feature"</td>
+<td title='com.automation.workware.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.automation.workware.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with correct credentials", "Login page feature"</td>
 <td><div><pre>org.testng.SkipException: got: &lt;false&gt;, expected: is &lt;true&gt;
 	at io.cucumber.testng.TestCaseResultObserver.lambda$assertTestCasePassed$1(TestCaseResultObserver.java:27)
 	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:66)
@@ -184,20 +329,23 @@ Caused by: org.junit.AssumptionViolatedException: got: &lt;false&gt;, expected: 
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
-	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 Caused by: org.junit.AssumptionViolatedException: got: &lt;false&gt;, expected: is &lt;true&gt;
 	at org.junit.Assume.assumeThat(Assume.java:106)
 	at org.junit.Assume.assumeTrue(Assume.java:50)
-	at Hooks.MyHooks.skip_scenario(MyHooks.java:27)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1131986928", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1131986928'><pre>org.testng.SkipException: got: &lt;false&gt;, expected: is &lt;true&gt;
+	at com.automation.workware.hooks.ApplicationHooks.skip_scenario(ApplicationHooks.java:46)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1680656439", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1680656439'><pre>org.testng.SkipException: got: &lt;false&gt;, expected: is &lt;true&gt;
 	at io.cucumber.testng.TestCaseResultObserver.lambda$assertTestCasePassed$1(TestCaseResultObserver.java:27)
 	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:66)
 	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
@@ -209,75 +357,24 @@ Caused by: org.junit.AssumptionViolatedException: got: &lt;false&gt;, expected: 
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
-	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 Caused by: org.junit.AssumptionViolatedException: got: &lt;false&gt;, expected: is &lt;true&gt;
 	at org.junit.Assume.assumeThat(Assume.java:106)
 	at org.junit.Assume.assumeTrue(Assume.java:50)
-	at Hooks.MyHooks.skip_scenario(MyHooks.java:27)
+	at com.automation.workware.hooks.ApplicationHooks.skip_scenario(ApplicationHooks.java:46)
 </pre></div></td>
-<td>3</td>
-<td>MyTestRunners.TestRunner@6aaceffd</td></tr>
-<tr>
-<td title='MyTestRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: MyTestRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Accepted username text", "Login page feature"</td>
-<td><div><pre>org.testng.SkipException: got: &lt;false&gt;, expected: is &lt;true&gt;
-	at io.cucumber.testng.TestCaseResultObserver.lambda$assertTestCasePassed$1(TestCaseResultObserver.java:27)
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:66)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
-	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.junit.AssumptionViolatedException: got: &lt;false&gt;, expected: is &lt;true&gt;
-	at org.junit.Assume.assumeThat(Assume.java:106)
-	at org.junit.Assume.assumeTrue(Assume.java:50)
-	at Hooks.MyHooks.skip_scenario(MyHooks.java:27)
-</pre></div><a href='#' onClick='toggleBox("stack-trace241885383", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace241885383'><pre>org.testng.SkipException: got: &lt;false&gt;, expected: is &lt;true&gt;
-	at io.cucumber.testng.TestCaseResultObserver.lambda$assertTestCasePassed$1(TestCaseResultObserver.java:27)
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:66)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
-	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.junit.AssumptionViolatedException: got: &lt;false&gt;, expected: is &lt;true&gt;
-	at org.junit.Assume.assumeThat(Assume.java:106)
-	at org.junit.Assume.assumeTrue(Assume.java:50)
-	at Hooks.MyHooks.skip_scenario(MyHooks.java:27)
-</pre></div></td>
-<td>3</td>
-<td>MyTestRunners.TestRunner@6aaceffd</td></tr>
+<td>1</td>
+<td>com.automation.workware.runners.TestRunner@305b7c14</td></tr>
 </table><p>
 </body>
 </html>
