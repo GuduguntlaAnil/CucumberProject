@@ -18,8 +18,12 @@ public class LoginPage {
 		
 	}
 	
-	public boolean isacceptedUserNamesTextExists() {
+	public boolean isacceptedUserNamesTextExists() 
+	{
+		System.out.println("Accepted user names text is displayed");
 		return driver.findElement(acceptedUserNamesText).isDisplayed();
+		
+		
 		
 	}
    public void enterUserName(String userName) {
